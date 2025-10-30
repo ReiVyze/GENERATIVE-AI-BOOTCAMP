@@ -7,13 +7,13 @@ from dotenv import load_dotenv
 
 # --- Configure API key ---
 load_dotenv()
-genai.configure(api_key=("AIzaSyDvwQ-tyve7W16LIt3qRenkzPNqF2G18KA"))
+genai.configure(api_key=("GOOGLE_API_KEY"))
 
 # --- Initialize model with fixed system prompt ---
 system_prompt = "You are a helpful, creative, and knowledgeable AI assistant. Always be polite and professional."
 model = genai.GenerativeModel(os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"))
 
-st.title("🎨 Creative Text Generator")
+st.title("GAMING HUB")
 
 # User prompt only
 prompt = st.text_area("Enter your prompt:", height=100)
