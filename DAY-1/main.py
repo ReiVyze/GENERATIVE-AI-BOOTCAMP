@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # --- Configure API key ---
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyDvwQ-tyve7W16LIt3qRenkzPNqF2G18KA"))
+genai.configure(api_key=("AIzaSyDvwQ-tyve7W16LIt3qRenkzPNqF2G18KA"))
 
 # --- Initialize model with fixed system prompt ---
 system_prompt = "You are a helpful, creative, and knowledgeable AI assistant. Always be polite and professional."
@@ -27,7 +27,7 @@ prompt = st.text_area("Enter your prompt:", height=100)
 #with col3:
 #    top_p = st.slider("Top-p (Probability Sampling)", 0.1, 1.0, 0.9)
 
-# Generate output
+# Generate outpu
 if st.button("Generate"):
     try:
         response = model.generate_content(
