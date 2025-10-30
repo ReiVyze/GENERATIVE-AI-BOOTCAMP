@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Configure API
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyC5sEAAb33DvEsr6IqU3byxeV0t68mvGD4"))
 
 # System prompt for image analysis
 system_prompt = "You are a helpful AI assistant that analyzes images. You provide clear, detailed, and accurate descriptions of what you see in images. Be specific about objects, people, settings, colors, and activities. Always be friendly and helpful in your descriptions."
